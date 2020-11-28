@@ -1,0 +1,141 @@
+
+/*Перший приклад з хувером кнопки*/
+/*button {*/
+/*    height: 90px;*/
+/*    width: 290px;*/
+/*    font-size: 28px;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    background-color: blue;*/
+/*    transition-property: background-color;*/
+/*    transition-duration: 800ms;*/
+/*}*/
+
+/*button:hover {*/
+/*    background-color: green;*/
+/*}*/
+
+
+/*Другий приклад transition options*/
+/*
+Transition options: ease, linear, ease-in, ease-out, ease-in-out
+ease - стартує повільно, потім пришвидшується
+linear - однакова швидкість завжди
+ease-in - стартує повільно потім пришвидшується
+ease-out - починається швидко і потім сповільнюється вкінці
+ease-in-out - починається повільно, потім всередині швидко, і сповільнються на кінці
+*/
+
+
+/*Second example*/
+/*.move {*/
+/*    width: 150px;*/
+/*    height: 30px;*/
+/*    padding: 15px 25px;*/
+/*    margin-bottom: 20px;*/
+/*    background-color: black;*/
+/*    color: white;*/
+/*    font-size: 20px;*/
+/*    transition-duration: 2s;*/
+/*}*/
+
+/*#ease {*/
+/*    transition-timing-function: ease;*/
+/*}*/
+
+/*#linear {*/
+/*    transition-timing-function: linear;*/
+/*}*/
+
+/*#ease-in {*/
+/*    transition-timing-function: ease-in;*/
+/*}*/
+
+/*#ease-out {*/
+/*    transition-timing-function: ease-out;*/
+/*}*/
+
+/*#ease-in-out {*/
+/*    transition-timing-function: ease-in-out;*/
+/*}*/
+
+/*.move:hover {*/
+/*    transform: translate(900px, 0);*/
+/*}*/
+
+
+/*Третій приклад*/
+/*button {*/
+/*    height: 90px;*/
+/*    width: 290px;*/
+/*    font-size: 28px;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    background-color: blue;*/
+/*    transition-property: all;*/
+/*    transition-duration: 1.5s;*/
+/*    transition-delay: 1.5s;*/
+/*}*/
+/*button:hover {*/
+/*    background-color: green;*/
+/*    font-size: 40px;*/
+/*    width: 400px;*/
+/*    color: red;*/
+/*    border-radius: 50px;*/
+/*}*/
+
+
+/*Четвертий приклад*/
+/*img {*/
+/*    width: 300px;*/
+/*    transition: transform 2s;*/
+/*}*/
+/*img:hover {*/
+/*    transform: scale(1.2, 1.2);*/
+/*}*/
+
+/*Пятий приклад*/
+/*img {*/
+/*    width: 300px;*/
+
+/*}*/
+/*img:hover {*/
+/*    animation: rotation 2s linear infinite;*/
+/*}*/
+
+/*@keyframes rotation {*/
+/*    from {*/
+/*        transform: rotate(0deg)*/
+/*    }*/
+/*    to {*/
+/*        transform: rotate(360deg);*/
+/*    }*/
+/*}*/
+
+
+/*Шостий приклад*/
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+.loading {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50px;
+    animation: loading 2s linear infinite;
+}
+@keyframes loading {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: rotateX(0deg) rotateY(180deg);
+    }
+    100% {
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+}
